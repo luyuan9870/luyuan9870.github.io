@@ -1,0 +1,32 @@
+import{_ as a,c as n,o as s,a4 as p}from"./chunks/framework.BG61BEI0.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"01-Dev/01.07-Linux/虚拟机/VirtualBox.md","filePath":"01-Dev/01.07-Linux/虚拟机/VirtualBox.md","lastUpdated":1712823825000}'),t={name:"01-Dev/01.07-Linux/虚拟机/VirtualBox.md"},e=p(`<p>Win10 Hv 不兼容，必须关闭！</p><p>VirtualBox官网：<a href="https://www.virtualbox.org/" target="_blank" rel="noreferrer">https://www.virtualbox.org/</a></p><p>Vagrant官网：<a href="https://www.vagrantup.com/" target="_blank" rel="noreferrer">https://www.vagrantup.com/</a></p><p>Vagrant镜像仓库：<a href="https://app.vagrantup.com/boxes/search" target="_blank" rel="noreferrer">https://app.vagrantup.com/boxes/search</a></p><p>安装VirtualBox和Vagrant，傻瓜式安装。安装完成后需要重启计算机。</p><p>在cmd命令窗口输入 vagrant 命令弹出相关内容 vagrant 安装成功</p><p>通过Vagrant安装虚拟机：</p><ul><li>创建一个空的目录，cmd切换到该目录中，然后执行 vagrant init centos/7 会创建Vagrantfile文件</li><li>执行 vagrant up 第一次执行的时候会远程下相关的镜像文件，并启动虚拟机。</li></ul><p><strong>网络配置</strong>：</p><ul><li>找到对应的Vagrantfile文件</li><li>修改<code>config.vm.network</code> 参数设置为主机 virtualbox网卡的IP网段</li><li>xshell通过私钥链接，私钥地址在当前虚拟机下的default/virtualbox 文件夹下 <code>private_key</code></li></ul><h2 id="root-vagrant-密码" tabindex="-1">root vagrant 密码 <a class="header-anchor" href="#root-vagrant-密码" aria-label="Permalink to &quot;root vagrant 密码&quot;">​</a></h2><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code"><code><span class="line"><span>su root</span></span>
+<span class="line"><span>vi /etc/ssh/sshd_config service sshd restart </span></span>
+<span class="line"><span># vagrant开启密码登录功能</span></span>
+<span class="line"><span>首先切换到root用户</span></span>
+<span class="line"><span>然后修改指定位置的配置文件</span></span>
+<span class="line"><span>找到passwordAuthentication 把no修改为yes</span></span>
+<span class="line"><span>修改成功之后重启服务</span></span>
+<span class="line"><span>到此就设置完成了</span></span>
+<span class="line"><span>\`\`\`Win10 Hv 不兼容， 必须关闭！</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>VirtualBox官网：https://www.virtualbox.org/</span></span>
+<span class="line"><span>Vagrant官网：https://www.vagrantup.com/</span></span>
+<span class="line"><span>Vagrant镜像仓库：https://app.vagrantup.com/boxes/search</span></span>
+<span class="line"><span>安装VirtualBox和Vagrant，傻瓜式安装。安装完成后需要重启计算机。</span></span>
+<span class="line"><span>在cmd命令窗口输入 vagrant 命令弹出相关内容 vagrant 安装成功</span></span>
+<span class="line"><span>通过Vagrant安装虚拟机：</span></span>
+<span class="line"><span>● 创建一个空的目录，cmd切换到该目录中，然后执行 vagrant init centos/7 会创建Vagrantfile文件</span></span>
+<span class="line"><span>● 执行 vagrant up 第一次执行的时候会远程下相关的镜像文件，并启动虚拟机。</span></span>
+<span class="line"><span>网络配置：</span></span>
+<span class="line"><span>● 找到对应的Vagrantfile文件</span></span>
+<span class="line"><span>● 修改config.vm.network 参数设置为主机 virtualbox网卡的IP网段</span></span>
+<span class="line"><span>● xshell通过私钥链接，私钥地址在当前虚拟机下的default/virtualbox 文件夹下 private_key</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>root vagrant 密码</span></span>
+<span class="line"><span>su root</span></span>
+<span class="line"><span>vi /etc/ssh/sshd_config service sshd restart </span></span>
+<span class="line"><span># vagrant开启密码登录功能</span></span>
+<span class="line"><span>首先切换到root用户</span></span>
+<span class="line"><span>然后修改指定位置的配置文件</span></span>
+<span class="line"><span>找到passwordAuthentication 把no修改为yes</span></span>
+<span class="line"><span>修改成功之后重启服务</span></span>
+<span class="line"><span>到此就设置完成了</span></span></code></pre></div>`,12),l=[e];function r(i,o,c,g,u,v){return s(),n("div",null,l)}const _=a(t,[["render",r]]);export{d as __pageData,_ as default};
