@@ -1,0 +1,1 @@
+import{_ as e,c as a,o as t}from"./chunks/framework.BG61BEI0.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"01-Dev/01.01-Java/index.md","filePath":"01-Dev/01.01-Java/index.md"}'),n={name:"01-Dev/01.01-Java/index.md"};function r(o,s,c,d,i,p){return t(),a("div")}const f=e(n,[["render",r]]);export{m as __pageData,f as default};
