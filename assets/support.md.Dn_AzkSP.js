@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as s,l as o}from"./chunks/framework.rIDq68an.js";const f=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"support.md","filePath":"support.md"}'),a={name:"support.md"},r=o("p",null,"testing",-1),n=[r];function p(c,_,d,i,l,u){return s(),e("div",null,n)}const h=t(a,[["render",p]]);export{f as __pageData,h as default};
