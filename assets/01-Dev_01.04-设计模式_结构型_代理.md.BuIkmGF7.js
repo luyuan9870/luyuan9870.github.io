@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a}from"./chunks/framework.rIDq68an.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"01-Dev/01.04-设计模式/结构型/代理.md","filePath":"01-Dev/01.04-设计模式/结构型/代理.md"}'),r={name:"01-Dev/01.04-设计模式/结构型/代理.md"};function o(s,c,n,_,p,d){return a(),t("div")}const f=e(r,[["render",o]]);export{m as __pageData,f as default};
