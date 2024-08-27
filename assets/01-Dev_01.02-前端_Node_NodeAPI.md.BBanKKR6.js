@@ -1,0 +1,12 @@
+import{_ as a,c as e,o as s,a4 as n}from"./chunks/framework.BG61BEI0.js";const f=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"01-Dev/01.02-前端/Node/NodeAPI.md","filePath":"01-Dev/01.02-前端/Node/NodeAPI.md"}'),t={name:"01-Dev/01.02-前端/Node/NodeAPI.md"},p=n(`<h2 id="fs-filesystem" tabindex="-1">Fs (FileSystem) <a class="header-anchor" href="#fs-filesystem" aria-label="Permalink to &quot;Fs (FileSystem)&quot;">​</a></h2><blockquote><p><a href="https://www.nodejs.cn/api-v18/fs.html" target="_blank" rel="noreferrer">fs 文件系统 | Node.js API 文档</a></p></blockquote><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code"><code><span class="line"><span>const fs = require(&#39;fs&#39;);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>fs.writeFile(&#39;filePath&#39;,&#39;Content&#39;,errFunction =&gt; {})</span></span></code></pre></div><h2 id="path" tabindex="-1">Path <a class="header-anchor" href="#path" aria-label="Permalink to &quot;Path&quot;">​</a></h2><h2 id="http" tabindex="-1">Http <a class="header-anchor" href="#http" aria-label="Permalink to &quot;Http&quot;">​</a></h2><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code"><code><span class="line"><span>const http = require(&#39;http&#39;)</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>const server = http.createServer((request,response) =&gt; {</span></span>
+<span class="line"><span>	// server </span></span>
+<span class="line"><span>	response.end(&#39;hello node server&#39;);</span></span>
+<span class="line"><span>});</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>server.listen(port,()=&gt;{</span></span>
+<span class="line"><span>	// 启动成功的回调函数</span></span>
+<span class="line"><span>});</span></span></code></pre></div><h2 id="model" tabindex="-1">Model <a class="header-anchor" href="#model" aria-label="Permalink to &quot;Model&quot;">​</a></h2><h2 id="package" tabindex="-1">Package <a class="header-anchor" href="#package" aria-label="Permalink to &quot;Package&quot;">​</a></h2>`,8),l=[p];function o(i,r,c,d,h,u){return s(),e("div",null,l)}const m=a(t,[["render",o]]);export{f as __pageData,m as default};
